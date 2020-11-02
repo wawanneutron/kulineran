@@ -1,0 +1,29 @@
+#app{
+  background-color: #232946;
+  color: #fffffe;
+  height: 100vh;
+}
+
+.costum-nav{
+  border-radius: 6px;
+  background-color: #232946 !important ;
+    .router-link-exact-active{
+      font-weight: bold;
+      color: #fffffe !important;
+    }
+  .dropdown-menu-right{
+    background-color: #eebbc3;
+    .dropdown-item{
+      &:hover{
+        color: #fffffe;
+        background-color: #ff8906;
+      }
+    }
+  }
+}
+
+// food
+
+.hero-food-text{
+  margin-top: 100px;
+}

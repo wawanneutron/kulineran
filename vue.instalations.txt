@@ -1,0 +1,15 @@
+Instalasi Vue.js
+--------------------------------
+
+- Install Node js (npm)
+- instal vue CLI
+- buat project di vue ui atau vue ui -H 0.0.0.0
+
+
+Insatalsi Plugin dan Dependensi
+---------------------------------
+
+- vue router
+- bootstrap vue
+- axios
+- vue toast notifications
