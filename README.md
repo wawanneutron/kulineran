@@ -1,5 +1,12 @@
 # kulineran
 
+
+![vue home](https://user-images.githubusercontent.com/60416437/98016479-9a3ec300-1e30-11eb-9dfb-14112b91c80a.PNG)
+
+
+
+## the first vue projact
+
 ## Project setup
 ```
 npm install
