@@ -1,7 +1,16 @@
+html{
+  background-color:#fef6e4;
+}
 #app{
   background-color: #232946;
   color: #fffffe;
-  height: 100vh;
+  height: 800px
+
+}
+.jumbotron{
+  margin-top: -30px;
+  background-color: #232946;
+  color: #fffffe;
 }
 
 .costum-nav{
@@ -30,11 +39,43 @@
   margin-top: -25px !important;
 }
 
+.costum-card{
+  
+  margin-top: 100px;
+  background-color: #fffffe;
+  .card-title{
+    margin-top: 10px;
+    color: #232946 !important;
+    font-weight: bold;
+  }
+  .card-text, .card-content{
+    color: #232946;
+    font-weight: normal;
+  }
+}
+.best-product{
+  margin-top: 140px;
+}
+
+
+.footer{
+  color: #232946 !important;
+}
+
 // food
 
 .hero-food-text{
   margin-top: 50px;
+  span{
+    color: #ff5470;
+    font-weight: 600;
+  }
+  .text-home{
+    color: #b8c1ec;
+    font-weight: 600;
+  }
 }
+
 .btn-cte{
   margin-top: 10px !important;
   background-color: #ff5470;
@@ -58,7 +99,11 @@
   }
   }
   .img-foods{
-    margin-top: 10px !important;
+    margin-top: -100px !important;
+  }
+
+  .costum-card{
+    margin-bottom: -80px;
   }
 }
 
@@ -79,4 +124,8 @@
     width: 300px !important;
     margin-top: 10px !important;
   }
+  .costum-card{
+    margin-bottom: -80px;
+  }
+
 }

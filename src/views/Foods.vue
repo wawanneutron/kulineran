@@ -2,6 +2,7 @@
   <b-container>
     <navbar />
     <heroFoods />
+    <Footer />
   </b-container>
 </template>
 

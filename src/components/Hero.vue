@@ -7,12 +7,15 @@
             <img
               src="../assets/img/food.png"
               alt="Food"
-              class="w-25 img-foods"
+              class="w-50 img-foods-mobile"
             />
           </b-col>
         </div>
-        <b-card-body title="Choice foods in list" class="hero-food-text">
-          <b-card-text>
+        <b-card-bodyclass class="hero-food-text">
+          <b-card-text class="text-hero h1">
+            Choice <span>foods</span> in list
+          </b-card-text>
+          <b-card-text class="text-home mt-4">
             This is a wider card with supporting text as a natural lead-in to
             additional content. This content is a little bit longer.
           </b-card-text>
@@ -28,7 +31,7 @@
               <b-icon icon="cart" class="ml-2 ic-order"></b-icon>
             </b-button>
           </div>
-        </b-card-body>
+        </b-card-bodyclass>
       </b-col>
       <b-col md="5" class="justify-content-center d-flex">
         <div class="d-md-block d-none">

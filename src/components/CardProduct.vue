@@ -1,33 +1,16 @@
 <template>
-  <div class="row">
-    <div class="col-lg-4 col-12">
-      <div class="card m-3">
-        <p class="text-dark m-3">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
-          facere laborum deleniti saepe vel sit autem itaque voluptas, amet nam
-          distinctio tenetur iure doloremque nostrum minima, obcaecati quo
-          mollitia ut!
+  <div class="container">
+    <div class="card costum-card card-shadow">
+      <div class="card-body text-black-50">
+        <img :src="'../images/' + product.gambar" class="card-img w-100" />
+        <h5 class="card-title">{{ product.nama }}</h5>
+        <p class="card-text">Harga : Rp. {{ product.harga }}</p>
+        <p class="card-content">
+          This is foods is ferry delisious, buy now just one click
         </p>
-      </div>
-    </div>
-    <div class="col-lg-4 col-12">
-      <div class="card m-3">
-        <p class="text-dark m-3">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
-          facere laborum deleniti saepe vel sit autem itaque voluptas, amet nam
-          distinctio tenetur iure doloremque nostrum minima, obcaecati quo
-          mollitia ut!
-        </p>
-      </div>
-    </div>
-    <div class="col-lg-4 col-12">
-      <div class="card m-3">
-        <p class="text-dark m-3">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
-          facere laborum deleniti saepe vel sit autem itaque voluptas, amet nam
-          distinctio tenetur iure doloremque nostrum minima, obcaecati quo
-          mollitia ut!
-        </p>
+        <router-link class="btn btn-success" :to="'/foods/' + product.id"
+          ><b-icon-cart></b-icon-cart> Pesan</router-link
+        >
       </div>
     </div>
   </div>
@@ -35,7 +18,8 @@
 
 <script>
 export default {
-  name: "Card-Product",
+  name: "CardProduct",
+  props: ["product"],
 };
 </script>
 

@@ -2,7 +2,16 @@
   <b-container>
     <navbar />
     <hero />
-    <cardProduct />
+    <!-- <div class="h4 best-product">Best product</div> -->
+    <div class="row justify-content-center">
+      <div
+        class="col-md-4 mt-4 mb-5"
+        v-for="product in products"
+        :key="product.id"
+      >
+        <CardProduct :product="product" />
+      </div>
+    </div>
   </b-container>
 </template>
 
@@ -12,12 +21,31 @@ import Navbar from "@/components/Navbar.vue";
 import Hero from "@/components/Hero.vue";
 import CardProduct from "@/components/CardProduct.vue";
 
+import axios from "axios";
+
 export default {
   name: "Home",
   components: {
     Navbar,
     Hero,
     CardProduct,
+  },
+  data() {
+    return {
+      products: [],
+    };
+  },
+  methods: {
+    setProducts(data) {
+      this.products = data;
+    },
+  },
+  mounted() {
+    // Make a request for a user with a given ID
+    axios
+      .get("http://localhost:3000/best-products")
+      .then((response) => this.setProducts(response.data))
+      .catch((error) => console.log("Gagal : ", error));
   },
 };
 </script>
