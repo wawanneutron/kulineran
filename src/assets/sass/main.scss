@@ -4,7 +4,7 @@ html{
 #app{
   background-color: #232946;
   color: #fffffe;
-  height: 800px
+  height: 1080px
 
 }
 .jumbotron{
@@ -36,12 +36,27 @@ html{
 
 }
 .img-foods{
-  margin-top: -25px !important;
+  margin-top: -30px !important;
 }
 
+.img-foods-hero{
+  margin-top: 30px;
+}
+.title-product,.title-product-home{
+  font-size: 30px;
+  margin-top: 140px;
+  span{
+    color: #ff5470;
+    font-weight: 600;
+  }
+}
+    .text-product{
+      color: #b8c1ec !important;
+      font-weight: 600;
+    }
 .costum-card{
   
-  margin-top: 100px;
+  margin-top: 30px;
   background-color: #fffffe;
   .card-title{
     margin-top: 10px;
@@ -59,6 +74,7 @@ html{
 
 
 .footer{
+  margin-top: 150px !important;
   color: #232946 !important;
 }
 
@@ -84,6 +100,9 @@ html{
   }
 }
 
+.form-group{
+  margin-right: 80px;
+}
 
 // mobile
 @media screen and (max-width: 600px) {
@@ -124,8 +143,17 @@ html{
     width: 300px !important;
     margin-top: 10px !important;
   }
+
   .costum-card{
     margin-bottom: -80px;
+  }
+  .title-product{
+    margin-top: -0px;
+    margin-top: 30px;
+  }
+  .title-product-home{
+    margin-top: -0px;
+    margin-top: 80px;
   }
 
 }

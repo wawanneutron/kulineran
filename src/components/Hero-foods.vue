@@ -11,8 +11,11 @@
             />
           </b-col>
         </div>
-        <b-card-body title="Choice foods in list" class="hero-food-text">
-          <b-card-text>
+        <b-card-body class="hero-food-text">
+          <b-card-text class="text-hero h1">
+            Choice <span>foods</span> in list
+          </b-card-text>
+          <b-card-text class="text-home mt-4">
             This is a wider card with supporting text as a natural lead-in to
             additional content. This content is a little bit longer.
           </b-card-text>
@@ -30,12 +33,12 @@
           </div>
         </b-card-body>
       </b-col>
-      <b-col md="5" class="justify-content-center d-flex">
+      <b-col md="6" class="justify-content-center d-flex">
         <div class="d-md-block d-none">
           <img
             src="../assets/img/ilustrasi.png"
             alt="Food"
-            class="w-100 mt-5 img-foods"
+            class="w-75 ml-5 img-foods-hero"
           />
         </div>
       </b-col>

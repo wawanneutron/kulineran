@@ -1,7 +1,7 @@
 <template>
   <b-container>
     <b-row no-gutters class="mt-5 justify-content-center">
-      <b-col md="5">
+      <b-col md="6">
         <div class="d-sm-block d-md-none">
           <b-col md="5" class="justify-content-center d-flex">
             <img

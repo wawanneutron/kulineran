@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="card costum-card card-shadow">
+    <div class="card costum-card shadow-lg">
       <div class="card-body text-black-50">
         <img :src="'../images/' + product.gambar" class="card-img w-100" />
         <h5 class="card-title">{{ product.nama }}</h5>

@@ -3,6 +3,14 @@
     <navbar />
     <hero />
     <!-- <div class="h4 best-product">Best product</div> -->
+    <div class="row">
+      <div class="col-md-4 ml-3">
+        <div class="h4 title-product-home">Best <span>Product</span></div>
+        <p class="font-italic text-product">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa.
+        </p>
+      </div>
+    </div>
     <div class="row justify-content-center">
       <div
         class="col-md-4 mt-4 mb-5"
