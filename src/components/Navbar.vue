@@ -14,19 +14,13 @@
 
         <!-- Right aligned nav iFoods -->
         <b-navbar-nav class="ml-auto">
-          <router-link class="nav-link mr-4" to="/chart"
+          <router-link class="nav-link mr-4" to="/foods/chart"
             >Keranjang
             <b-icon-bag class="ml-1"></b-icon-bag>
-            <span class="badge badge-success ml-2">0</span>
+            <span class="badge badge-success ml-2">{{
+              jumlah_pesanans.length
+            }}</span>
           </router-link>
-          <b-nav-item-dropdown right>
-            <!-- Using 'button-content' slot -->
-            <template #button-content>
-              <em>User</em>
-            </template>
-            <b-dropdown-item href="#">Profile</b-dropdown-item>
-            <b-dropdown-item href="#">Sign Out</b-dropdown-item>
-          </b-nav-item-dropdown>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -34,8 +28,27 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   name: "Navbar",
+  data() {
+    return {
+      jumlah_pesanans: [],
+    };
+  },
+
+  methods: {
+    setJumlah(data) {
+      this.jumlah_pesanans = data;
+    },
+  },
+  mounted() {
+    axios
+      .get("http://localhost:3000/keranjangs")
+      .then((response) => this.setJumlah(response.data))
+      .catch((error) => console.log(error));
+  },
 };
 </script>
 

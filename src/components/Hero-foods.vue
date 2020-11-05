@@ -13,7 +13,8 @@
         </div>
         <b-card-body class="hero-food-text">
           <b-card-text class="text-hero h1">
-            Choice <span>foods</span> in list
+            The Secret to <span> Better Health May Be Eating </span> Delicious
+            Food
           </b-card-text>
           <b-card-text class="text-home mt-4">
             This is a wider card with supporting text as a natural lead-in to

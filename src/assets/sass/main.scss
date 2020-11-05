@@ -75,7 +75,8 @@ html{
 
 .footer{
   margin-top: 150px !important;
-  color: #232946 !important;
+  background-color: #232946;
+  color: #fffffe !important;
 }
 
 // food
@@ -100,12 +101,25 @@ html{
   }
 }
 
-.form-group{
-  margin-right: 80px;
+
+.search{
+  background-color: #fffffe !important;
+  font-weight: bold;
+}
+
+// detail
+.bg-card-detail{
+  margin-top: 50px !important;
+  color: #232946;
+  border-radius: 12px;
+  background-color: #fffffe;
 }
 
 // mobile
 @media screen and (max-width: 600px) {
+  html{
+    background-color: #232946 !important;
+  }
   .hero-food-text{
     text-align: center;
     margin-top: -70px;

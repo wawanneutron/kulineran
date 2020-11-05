@@ -83,7 +83,8 @@ html {
 
 .footer {
   margin-top: 150px !important;
-  color: #232946 !important;
+  background-color: #232946;
+  color: #fffffe !important;
 }
 
 .hero-food-text {
@@ -109,11 +110,22 @@ html {
   background-color: #004643;
 }
 
-.form-group {
-  margin-right: 80px;
+.search {
+  background-color: #fffffe !important;
+  font-weight: bold;
+}
+
+.bg-card-detail {
+  margin-top: 50px !important;
+  color: #232946;
+  border-radius: 12px;
+  background-color: #fffffe;
 }
 
 @media screen and (max-width: 600px) {
+  html {
+    background-color: #232946 !important;
+  }
   .hero-food-text {
     text-align: center;
     margin-top: -70px;

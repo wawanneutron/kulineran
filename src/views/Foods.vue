@@ -1,24 +1,31 @@
 <template>
   <b-container>
-    <navbar />
+    <Navbar />
     <heroFoods />
     <div class="row">
       <div class="col-md-4 ml-3">
         <div class="h4 title-product"><span>Product</span> Recomendations</div>
         <p class="font-italic text-product">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa.
+          How one Stanford nutrition expert is rethinking everything he’s
+          learned about how to get people to eat healthier
         </p>
       </div>
     </div>
     <div class="form-group row">
       <div class="col-lg-6">
-        <form>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text ml-3">
+              <b-icon-search></b-icon-search>
+            </div>
+          </div>
           <input
             type="text"
+            class="form-control font-italic"
+            id="inlineFormInputGroupUsername"
             placeholder="search product"
-            class="font-italic text-black-50 ml-3 mt-2 form-control"
           />
-        </form>
+        </div>
       </div>
     </div>
     <div class="row justify-content-center">

@@ -8,7 +8,7 @@
         <p class="card-content">
           This is foods is ferry delisious, buy now just one click
         </p>
-        <router-link class="btn btn-success" :to="'/foods/' + product.id"
+        <router-link class="btn btn-success" :to="'/foods/detail/' + product.id"
           ><b-icon-cart></b-icon-cart> Pesan</router-link
         >
       </div>

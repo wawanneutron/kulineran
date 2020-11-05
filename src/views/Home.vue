@@ -1,6 +1,6 @@
 <template>
   <b-container>
-    <navbar />
+    <Navbar />
     <hero />
     <!-- <div class="h4 best-product">Best product</div> -->
     <div class="row">
